@@ -51,3 +51,4 @@ export const setupModals = () => {
         el.addEventListener("click", toggleModal);
     }
 };
+
