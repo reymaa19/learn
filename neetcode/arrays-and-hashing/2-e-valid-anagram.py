@@ -1,5 +1,5 @@
 """
-Is Anagram 
+Is Anagram
 Given two strings s and t, return true if the two strings are anagrams of
 each other, otherwise return false.
 
@@ -18,12 +18,12 @@ Constraints:
 s and t consist of lowercase English letters.
 
 Notes:
-    Input: 
+    Input:
         - String s, String t
     Output:
         - True, if both string contain the same characters as one another
         - False, if they do not contain the same characters as one another
-            
+
     - Need to keep track of the number of occurances of each character
     - Use a hashmap
     - Loop once

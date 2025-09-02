@@ -28,31 +28,33 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        l, r = 0, 1  # left = buy, right = sell
-        maxP = 0
-
-        # buy low sell high
-        while r < len(prices):  # keep iterating until the end
-            if prices[l] < prices[r]:  # if profitable
-                profit = prices[r] - prices[l]
-                maxP = max(maxP, profit)
-            else:
-                l = r  # shift l to r since its the new cheapest price
-            r += 1  # update the r pointer since time moves in one direction
-
-        return maxP
-
-    # O(n^2)
-    # def maxProfit(self, prices: List[int]) -> int:
-    #     res = 0
-    #
-    #     for i in range(len(prices)):
-    #         for j in range(i + 1, len(prices)):
-    #             profit = prices[j] - prices[i]
-    #             res = max(profit, res)
-    #
-    #     return res
+        return 1
 
 
 prices = [7, 1, 5, 3, 6, 4]
 print(Solution().maxProfit(prices))
+
+#     l, r = 0, 1  # left = buy, right = sell
+#     maxP = 0
+#
+#     # buy low sell high
+#     while r < len(prices):  # keep iterating until the end
+#         if prices[l] < prices[r]:  # if profitable
+#             profit = prices[r] - prices[l]
+#             maxP = max(maxP, profit)
+#         else:
+#             l = r  # shift l to r since its the new cheapest price
+#         r += 1  # update the r pointer since time moves in one direction
+#
+#     return maxP
+#
+# # O(n^2)
+# # def maxProfit(self, prices: List[int]) -> int:
+# #     res = 0
+# #
+# #     for i in range(len(prices)):
+# #         for j in range(i + 1, len(prices)):
+# #             profit = prices[j] - prices[i]
+# #             res = max(profit, res)
+# #
+# #     return res

@@ -13,7 +13,7 @@ Input: nums = [1, 2, 3, 4]
 Output: false
 
 Notes:
-    Input: 
+    Input:
         - Array of nums
     Output boolean:
         - True if any value appears more than once
